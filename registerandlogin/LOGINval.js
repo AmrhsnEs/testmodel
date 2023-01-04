@@ -36,3 +36,34 @@ function validateLog(){
         return true;
     }
 }
+
+function validate()
+{
+    var name = document.getElementById("name").value;  
+    var Password = document.getElementById("pass").value;  
+    var news = document.getElementById("chk").value;  
+    var lowerCaseLetters = /[a-z]/g;
+    var upperCaseLetters = /[A-Z]/g;
+    var numbers = /[0-9]/g;
+    if (!isNaN(name[0]) || name < 0 || name > 9) 
+    {
+        alert("نام کاربری با عدد شروع نشود");
+        name.focus();    
+        return false; 
+    }  
+    
+    else if(Password.match(upperCaseLetters) || Password.match(lowerCaseLetters) || Password.match(numbers))
+    {
+        alert("عدد حروف بزرگ حروف کوچیک ");
+        Password.focus();    
+        return false; 
+    } 
+    else 
+    {
+        alert("اطلاعات با موفقیت ارسال شد");
+        return true;
+    }
+  
+}
+  
+  
