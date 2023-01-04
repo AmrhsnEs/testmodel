@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ورود</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form method="post" name="loginform" onsubmit="return validateLog()" action="login.php">
+                <div class="container">
+                <h1>ثبت نام</h1>
+                <p>لطفا فرم را کامل وارد کنید</p>
+                <hr>
+                <label for="username"><b>نام کاربری</b></label>
+                <input type="text" placeholder="امیرحسین" name="username" id="username">
+            
+                <label for="pass"><b>کلمه عبور</b></label>
+                <input type="password" placeholder="********" name="pass" id="pass"><input type="checkbox" id="showpass" onclick="myFunction('pass')">
+                <hr>
+        
+                <button type="submit" class="registerbtn">ورود</button>
+                </div>
+            </form>
+            <script src="index.js"></script>
+            <script src="login.js"></script>
+    </body>
+</html>
